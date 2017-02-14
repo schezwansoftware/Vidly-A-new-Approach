@@ -13,17 +13,19 @@
 
 
     </li>
-
+    
     <li>
-        <p>Release-Date<span>-@Model.ReleasedDate.DayOfWeek,@Model.ReleasedDate.ToShortDateString()</span></p>
+        <p>Release-Date<span>-@Model.ReleasedDate.ToLongDateString()</span></p>
 
 
     </li>
 
     <li>
-        <p>Added to Stock<span>=@DateTime.Now.DayOfWeek,@DateTime.Now.ToShortDateString()</span></p>
+        <p> Added To Stock On:<span>@Model.AddedDate.ToLongDateString()</span></p>
+
 
     </li>
+
     <li>
         <p>Number in Stock<span>=@Model.NumberInStock</span></p>
 
